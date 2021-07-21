@@ -7,15 +7,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class UserDTO {
     @JsonProperty("id")
     int id;
-
     @JsonProperty("email")
     String email;
     @JsonProperty("first_name")
     String first_name;
     @JsonProperty("last_name")
     String last_name;
-    @JsonProperty("avatar")
-    String avatar;
 
     public int getId() {
         return id;
@@ -47,14 +44,6 @@ public class UserDTO {
 
     public void setLast_name(String last_name) {
         this.last_name = last_name;
-    }
-
-    public String getAvatar() {
-        return avatar;
-    }
-
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
     }
 
 }
